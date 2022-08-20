@@ -45,13 +45,16 @@ const addOneDayG=()=>{
 }
 document.querySelector("#button").addEventListener("click",()=>{
     document.querySelector("#text").style.display="block";
-    let start = setInterval(()=>{
-        let yearOfG = addOneDayG();
-        let yearOfH = addOneDayH();
-        if (yearOfG == yearOfH){
-            clearInterval(start);
-            document.querySelector("#meetYear").textContent = yearOfG;
-            document.querySelector("#meetYear").style.display="inline-block";
-        }
-    },1)
+    if (!flag){
+        let start = setInterval(()=>{
+            let yearOfG = addOneDayG();
+            let yearOfH = addOneDayH();
+            if (yearOfG == yearOfH){
+                clearInterval(start);
+                document.querySelector("#meetYear").textContent = yearOfG;
+                document.querySelector("#meetYear").style.display="inline-block";
+            }
+        },1)
+    }
+    flag = true;
 })
