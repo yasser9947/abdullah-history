@@ -12,6 +12,7 @@ body{
     color: #1D3557;
     /*padding: 50px;*/
     margin-top: 100px;
+
 }
 img{
     height: 200px;
@@ -21,6 +22,7 @@ img{
 h1{
     text-align: center;
     color: #1D3557;
+    font-size: 70px;
 }
 
 .container{
@@ -46,6 +48,7 @@ h1{
     border-radius: 10px;
     border: none;
     transition: .2s all;
+    font-size: 45px;
 }
 .box button:active{
     transform: translateY(2px);
@@ -56,6 +59,12 @@ h1{
     animation: ease-in flash ;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+}
+h2{
+    font-size: 45px;
+}
+h3{
+    font-size: 45px;
 }
 
 @keyframes flash {
